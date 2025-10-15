@@ -1,0 +1,511 @@
+@import "tailwindcss";
+
+
+
+.MainLayout {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 40px #00ffff22;
+    margin-top: 30px;
+}
+
+
+
+/* === HEADER === */
+.Headerr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 50px #1515156d;
+    color: white;
+    padding: 0 50px;
+    border-bottom: 1px solid #b1b3b333;
+    backdrop-filter: blur(6px);
+}
+
+
+.textHeader1{
+    cursor: pointer;
+    color: #00ffff;
+}
+
+.divHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.TextHeader {
+    font-size: 35px;
+    font-weight: 600;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.divLink {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.divLink a {
+    color: #00ffff;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.divLink a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #00ffff;
+    box-shadow: 0 0 6px #00ffff;
+    transition: width 0.3s ease;
+}
+
+.divLink a:hover::after {
+    width: 100%;
+}
+
+/* === CONTENT === */
+.Contentt {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.AllDivHome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    width: 90%;
+    max-width: 1100px;
+    margin-top: 100px;
+}
+
+.text-section {
+    flex: 1;
+}
+
+.Name {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.NeonText {
+    color: #00ffff;
+    text-shadow: 0 0 12px #00ffff, 0 0 25px #00ffffaa;
+}
+
+.Role {
+    font-size: 24px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.Desc {
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #cccccc;
+}
+
+.highlight {
+    color: #00ffff;
+    text-shadow: 0 0 6px #00ffff;
+}
+
+
+.ContactForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  .FormContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  }
+  
+  .FormInput,
+  .FormTextarea {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid #00ffff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .FormTextarea {
+    min-height: 100px;
+  }
+  
+  .FormButton {
+    background: #00ffff;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .FormButton:hover {
+    background: #00cccc;
+  }
+
+
+  
+/* === AVATAR === */
+.gambarprof {
+    border: 3px solid #00ffff88;
+    box-shadow: 0 0 55px #00ffff55, 0 0 10px #00ffff55 inset;
+    transition: all 0.4s ease;
+}
+
+.gambarprof:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px #00ffff99;
+}
+
+
+.PortoGambar{
+    border: 3px solid #00ffff88;
+    box-shadow: 0 0 55px #00ffff55, 0 0 10px #00ffff55 inset;
+    width: fit-content;
+    background-color: #000;
+    transition: all 0.4s ease;
+   
+}
+
+.PortoGambar:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 35px #00ffff99;
+}
+
+
+.divPorto{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+    
+}
+
+
+
+
+.TextContact{
+    color: #00ffff;
+    text-shadow: 0 0 6px #00ffff;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 300px;
+}
+
+
+
+
+/* === FOOTER === */
+
+
+
+
+
+.Footerr {
+    text-align: center;
+    background: #000;
+    border-top: 1px solid #00ffff33;
+    color: #00ffffcc;
+    padding: 15px;
+    box-shadow: 0 -2px 15px #00ffff33;
+    font-size: 14px;
+}
+
+
+
+
+.Portotext{
+    color: #00ffff;
+    text-shadow: 0 0 6px #00ffff;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+/* === TYPING EFFECT === */
+.typed-text {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 0 0 8px #00ffff88;
+    white-space: nowrap;
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    height: 45px;
+    background-color: #00ffff;
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+    vertical-align: middle;
+    box-shadow: 0 0 8px #00ffff;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    50.1%,
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.animated-bg,
+.neon-particles,
+.particle {
+    pointer-events: none;
+    /* tidak menghalangi teks */
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .divHeader {
+        align-items: center;
+        gap: 15px;
+    }
+
+    .TextHeader {
+        font-size: 28px;
+    }
+
+    .divLink {
+        gap: 25px;
+    }
+
+    .typed-text {
+        font-size: 34px;
+    }
+
+    .cursor {
+        height: 32px;
+    }
+
+    .AllDivHome {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+        margin-left:40px;
+        margin-top: 50px;
+        
+    }
+
+
+    .divPorto{
+        flex-direction: column;
+    }
+
+    .Name {
+        font-size: 36px;
+    }
+
+    .Role {
+        font-size: 20px;
+    }
+
+    .gambarprof {
+        size: 200px;
+    }
+
+    .Contentt {
+        padding: 30px 20px;
+    }
+}
+
+
+.Contentt {
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.animated-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 50%, #00ffff22, transparent 60%),
+        radial-gradient(circle at 80% 70%, #00ffff11, transparent 60%);
+    animation: move-bg 12s infinite alternate ease-in-out;
+    filter: blur(50px);
+    z-index: 0;
+}
+
+@keyframes move-bg {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+
+.neon-particles {
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.particle {
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #00ffff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffffaa;
+    animation: float 12s linear infinite;
+    opacity: 0.6;
+}
+
+.particle:nth-child(odd) {
+    width: 4px;
+    height: 4px;
+    animation-duration: 10s;
+}
+
+.particle:nth-child(3n) {
+    animation-duration: 14s;
+}
+
+.particle:nth-child(5n) {
+    width: 8px;
+    height: 8px;
+    opacity: 0.9;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(110%) translateX(0);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-10%) translateX(calc(var(--x, 0) * 1px));
+        opacity: 0;
+    }
+}
+
+.particle:nth-child(1) {
+    left: 5%;
+    animation-delay: 1s;
+    --x: 30;
+}
+
+.particle:nth-child(2) {
+    left: 15%;
+    animation-delay: 3s;
+    --x: -20;
+}
+
+.particle:nth-child(3) {
+    left: 25%;
+    animation-delay: 5s;
+    --x: 40;
+}
+
+.particle:nth-child(4) {
+    left: 35%;
+    animation-delay: 2s;
+    --x: -10;
+}
+
+.particle:nth-child(5) {
+    left: 45%;
+    animation-delay: 6s;
+    --x: 20;
+}
+
+.particle:nth-child(6) {
+    left: 55%;
+    animation-delay: 4s;
+    --x: -30;
+}
+
+.particle:nth-child(7) {
+    left: 65%;
+    animation-delay: 8s;
+    --x: 10;
+}
+
+.particle:nth-child(8) {
+    left: 75%;
+    animation-delay: 1s;
+    --x: -20;
+}
+
+.particle:nth-child(9) {
+    left: 85%;
+    animation-delay: 5s;
+    --x: 15;
+}
+
+.particle:nth-child(10) {
+    left: 95%;
+    animation-delay: 3s;
+    --x: -25;
+}
