@@ -189,7 +189,7 @@ export default function Home() {
                     <Divider />
                     <div style={{ display: "flex", justifyContent: "center" }}>
                       <p style={{ color: "white" }}>Website Link :
-                        <span><Link style={{ color: "#00ffff" }} target="_" href="https://project-less-7aeb.vercel.app"> Project 2</Link></span></p>
+                        <span><Link style={{ color: "#00ffff" }} target="_" href="https://new-portofolio-less.vercel.app/"> Project 2</Link></span></p>
                     </div>
                   </Card>
 
