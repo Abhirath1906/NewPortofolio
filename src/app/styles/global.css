@@ -29,7 +29,7 @@
 }
 
 
-.textHeader1{
+.textHeader1 {
     cursor: pointer;
     color: #00ffff;
 }
@@ -131,13 +131,9 @@
 }
 
 
-.ContactForm {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-  }
-  
-  .FormContainer {
+
+
+.FormContainer {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -146,23 +142,23 @@
     padding: 24px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-  }
-  
-  .FormInput,
-  .FormTextarea {
+}
+
+.FormInput,
+.FormTextarea {
     background: rgba(255, 255, 255, 0.1);
     color: white;
     border: 1px solid #00ffff;
     padding: 10px;
     border-radius: 8px;
     font-size: 14px;
-  }
-  
-  .FormTextarea {
+}
+
+.FormTextarea {
     min-height: 100px;
-  }
-  
-  .FormButton {
+}
+
+.FormButton {
     background: #00ffff;
     color: black;
     border: none;
@@ -171,14 +167,14 @@
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  .FormButton:hover {
+}
+
+.FormButton:hover {
     background: #00cccc;
-  }
+}
 
 
-  
+
 /* === AVATAR === */
 .gambarprof {
     border: 3px solid #00ffff88;
@@ -192,33 +188,84 @@
 }
 
 
-.PortoGambar{
-    border: 3px solid #00ffff88;
+.PortoGambar {
+    border: 1px solid #00ffff88;
     box-shadow: 0 0 55px #00ffff55, 0 0 10px #00ffff55 inset;
     width: fit-content;
-    background-color: #000;
+    background-color:#00cccc00;
     transition: all 0.4s ease;
-   
+    height: 450px;
+    width: 390px;
 }
 
-.PortoGambar:hover{
-    transform: scale(1.05);
+
+.TextCompanny{
+    color: #00cccc;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.SilverText{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.PortoGambar:hover {
+    transform: scale(1.1);
+    border: 3px solid #00ffff88;
     box-shadow: 0 0 35px #00ffff99;
 }
 
 
-.divPorto{
+.divPorto {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 100px;
     margin-top: 100px;
-    
+    justify-content: center;
+
+}
+
+/* .AvatarPic{
+    width: 400px
+} */
+
+.TextCardAva{
+    color: white;
+    opacity: 0.5;
+}
+
+.AllTextLinkPro{
+    margin-top: 30px;
+}
+
+.LinkView{
+    color:#00ffff;
+    transition: all 0.4s ease;
+
+}
+
+.LinkView:hover{
+    color:#00ffff;
+    background-color: #00cccc7a;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 35px #00ffff99;
+
+}
+
+
+.AvatarPic{
+    width: 340px; 
+    height: 200px
 }
 
 
 
 
-.TextContact{
+/*____________________*/
+
+.TextContact {
     color: #00ffff;
     text-shadow: 0 0 6px #00ffff;
     display: flex;
@@ -227,6 +274,112 @@
     margin-top: 300px;
 }
 
+.SmallTextcontact {
+    color: white;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ContactForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    color: white;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 150px;
+}
+
+.LongTextCon {
+    opacity: 0.5;
+    margin-top: 20px;
+}
+
+.ThelogosE {
+    color: #00cccc;
+    background-color: #00cccc2b;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+
+}
+
+.ThelogosE:hover{
+    background-color: #00cccc67;
+
+}
+
+
+
+.DivLogosText {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.TextInL{
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.AlldivContactText{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+
+
+.FormContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    transition: all 0.4s ease;
+
+}
+
+.FormContainer:hover{
+    scale: 1.1;
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.3);
+
+}
+
+.FormInput,
+.FormTextarea {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid #00ffff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.FormTextarea {
+    min-height: 100px;
+}
+
+.FormButton {
+    background: #00ffff;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.FormButton:hover {
+    background: #00cccc;
+}
 
 
 
@@ -237,19 +390,17 @@
 
 
 .Footerr {
-    text-align: center;
+
     background: #000;
     border-top: 1px solid #00ffff33;
-    color: #00ffffcc;
     padding: 15px;
     box-shadow: 0 -2px 15px #00ffff33;
-    font-size: 14px;
 }
 
 
 
 
-.Portotext{
+.Portotext {
     color: #00ffff;
     text-shadow: 0 0 6px #00ffff;
     display: flex;
@@ -258,6 +409,137 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+.Footer1TT{
+    font-size: 25px;
+    font-weight:bold;
+    color: #00ffffcc;
+}
+
+.TextFooter{
+    color: white;
+    opacity: 0.5;
+}
+
+.MailFooter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.AllDivFirstFoo{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.AllDivFooter{
+    display: flex;
+    gap: 150px;
+
+}
+
+.TextLinks{
+    color: white;
+    font-weight: 500;
+}
+
+.AllLinksFooter{
+    color: white;
+    opacity: 0.5;
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+}
+
+.AllLinksFooter:hover{
+    opacity: 1;
+}
+
+
+.AlldivLinksFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.AlldivLinksText{
+    margin-top: 10px;
+}
+
+.LastTextFooter{
+    color: white;
+    opacity: 0.5;
+}
+
+.LinkSocial{
+    color: #00ffffcc;
+    border: solid #00cccc 1px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+}
+
+.LinkSocial:hover{
+    background-color: #00cccc76;
+    box-shadow: 0 -2px 15px #00cccc;
+    scale: 1.1;
+}
+
+.AllDivLinksFoo{
+    display: flex;
+    gap: 20px;
+}
+
+.Avaible{
+    color: #00cccc;
+     background-color: #00cccc67;
+     border:solid #00cccc 1px;
+     border-radius: 20px;
+     display: inline-block;
+     padding: 5px;
+     font-weight: 500;
+     font-size: 10px;
+     width: 110px;
+}
+
+.allDivConnect{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+
+.Footerr2{
+    background: #000;
+    border-top: 1px solid #00ffff33;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+
+.DivLastFooter{
+    display: flex;
+    align-items: center;
+    color: white;
+    opacity: 0.5;
+    justify-content: space-between;
+}
 
 
 
@@ -282,6 +564,8 @@
     vertical-align: middle;
     box-shadow: 0 0 8px #00ffff;
 }
+
+
 
 @keyframes blink {
 
@@ -310,7 +594,7 @@
 
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .divHeader {
         align-items: center;
         gap: 15px;
@@ -336,13 +620,13 @@
         flex-direction: column-reverse;
         text-align: center;
         gap: 40px;
-        margin-left:40px;
+        margin-left: 40px;
         margin-top: 50px;
-        
+
     }
 
 
-    .divPorto{
+    .divPorto {
         flex-direction: column;
     }
 
@@ -396,8 +680,150 @@
     100% {
         background-position: 100% 100%;
     }
-}
+} */
 
+
+
+@media (max-width: 768px) {
+
+    /* ================= HEADER ================= */
+  
+    .Headerr {
+      padding: 0 20px;
+    }
+  
+    .TextHeader {
+      font-size: 22px;
+    }
+  
+    .divLink {
+      gap: 20px;
+      font-size: 14px;
+    }
+  
+    /* ================= HERO SECTION ================= */
+  
+    .AllDivHome {
+      flex-direction: column-reverse;
+      text-align: center;
+      gap: 40px;
+      margin-top: 60px;
+      width: 100%;
+    }
+  
+    .typed-text {
+      font-size: 30px;
+    }
+  
+    .cursor {
+      height: 28px;
+    }
+  
+    .Role {
+      font-size: 18px;
+    }
+  
+    .Name {
+      font-size: 32px;
+    }
+  
+    .Desc {
+      font-size: 14px;
+    }
+  
+    .gambarprof {
+      width: 220px !important;
+      height: 220px !important;
+    }
+  
+    /* ================= CONTENT ================= */
+  
+    .Contentt {
+      padding: 30px 16px;
+    }
+  
+    /* ================= PORTOFOLIO ================= */
+  
+    .Portotext {
+      font-size: 32px;
+    }
+  
+    .divPorto {
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 60px;
+    }
+  
+    .PortoGambar {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+    }
+  
+    .AvatarPic {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* ================= CONTACT ================= */
+  
+    .TextContact {
+      font-size: 34px;
+      margin-top: 150px;
+      text-align: center;
+    }
+  
+    .SmallTextcontact {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .ContactForm {
+      flex-direction: column;
+      gap: 50px;
+      margin-bottom: 100px;
+    }
+  
+    .AlldivContactText {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .FormContainer {
+      width: 100%;
+      max-width: 320px;
+    }
+  
+    /* ================= FOOTER ================= */
+  
+    .AllDivFooter {
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+    }
+  
+    .AllDivFirstFoo {
+      margin-left: 0;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .AlldivLinksText {
+      text-align: center;
+    }
+  
+    .AllDivLinksFoo {
+      justify-content: center;
+    }
+  
+    .DivLastFooter {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+  }
+  
 
 .neon-particles {
     inset: 0;

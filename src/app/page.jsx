@@ -4,7 +4,7 @@ import { Layout, Avatar, Divider, Card } from "antd"
 import Link from "next/link"
 import gsap from "gsap"
 import React, { useEffect, useState } from "react"
-import { InstagramOutlined, GithubOutlined, FacebookOutlined } from "@ant-design/icons";
+import { InstagramOutlined, GithubOutlined, TikTokOutlined, MailOutlined, PhoneOutlined, AimOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import "../app/styles/global.css"
 
@@ -66,7 +66,7 @@ export default function Home() {
 
 
 
-  //  Form 
+
   const handleSubmit = async (e) => {
     e.preventDefault()
 
@@ -163,60 +163,179 @@ export default function Home() {
                 <div id="portfolio" className="Portotext">
                   <p className="textportoo">Portofolio</p>
                 </div>
+                <div>
+                  <div className="divPorto">
+                    <Card className="PortoGambar">
+                      <Avatar
+                        
+                        shape="square"
+                        src="/porto1.png"
+                        
+                        className="AvatarPic"
+                      />
+                      <Divider />
 
-                <div className="divPorto">
-                  <Card className="PortoGambar">
-                    <Avatar
-                      size={200}
-                      shape="square"
-                      src="/porto1.png"
-                      style={{ width: "300px" }}
-                    />
-                    <Divider />
-                    <div style={{ display: "flex", justifyContent: "center" }}>
-                      <p style={{ color: "white" }}>Website Link :
-                        <span><Link style={{ color: "#00ffff" }} target="_" href="https://compannyprof.vercel.app"> Project 1</Link></span></p>
-                    </div>
-                  </Card>
+                      <p className="TextCompanny">Companny Profile</p>
+                      <p className="SilverText">SILVER SPURS</p>
+                      <p className="TextCardAva">Showcasing modern architecture through immersive<br />
+                        experiences </p>
+                      <div className="AllTextLinkPro">
 
-                  <Card className="PortoGambar">
-                    <Avatar
-                      size={200}
-                      shape="square"
-                      src="/porto2.png"
-                      style={{ width: "300px" }}
-                    />
-                    <Divider />
-                    <div style={{ display: "flex", justifyContent: "center" }}>
-                      <p style={{ color: "white" }}>Website Link :
-                        <span><Link style={{ color: "#00ffff" }} target="_" href="https://new-portofolio-less.vercel.app/"> Project 2</Link></span></p>
-                    </div>
-                  </Card>
+                        <Link className="LinkView" target="_" href="https://compannyprof.vercel.app"> View Project <ArrowRightOutlined /></Link>
+                      </div>
+                    </Card>
 
-                  <Card className="PortoGambar">
-                    <Avatar
-                      size={200}
-                      shape="square"
-                      src="/porto3.png"
-                      style={{ width: "300px" }}
-                    />
-                    <Divider />
-                    <div style={{ display: "flex", justifyContent: "center" }}>
-                      <p style={{ color: "white" }}>Website Link :
-                        <span><Link style={{ color: "#00ffff" }} target="_" href="https://quiz-client-iota.vercel.app"> Project 3</Link></span></p>
+                    <Card className="PortoGambar">
+                      <Avatar
+                        
+                        shape="square"
+                        src="/porto2.png"
+                        className="AvatarPic"
+                      />
+                      <Divider />
+                      <p className="TextCompanny">E-Commerce</p>
+                      <p className="SilverText">FASHION</p>
+                      <p className="TextCardAva">A revolutionary shopping experience <br /></p>
+                      <div className="AllTextLinkPro">
+
+                        <Link className="LinkView" target="_" href="https://new-portofolio-less.vercel.app/"> View Project <ArrowRightOutlined /></Link>
+                      </div>
+                    </Card>
+
+
+                  </div>
+
+
+                  <div className="divPorto">
+
+                    <div>
+                      <Card className="PortoGambar">
+                        <Avatar
+                          
+                          shape="square"
+                          src="/porto3.png"
+                          className="AvatarPic"
+                        />
+                        <Divider />
+                        <p className="TextCompanny">Design Phone</p>
+                        <p className="SilverText">Creative Design</p>
+                        <p className="TextCardAva">Bold branding and dynamic web presence for a creative design</p>
+                        <div className="AllTextLinkPro">
+
+                          <Link className="LinkView" style={{ color: "#00ffff" }} target="_" href="https://quiz-client-iota.vercel.app"> View Project <ArrowRightOutlined /></Link>
+                        </div>
+                      </Card>
                     </div>
-                  </Card>
+                    <div>
+                      <Card className="PortoGambar">
+                        <Avatar
+                          
+                          shape="square"
+                          src="/porto4.png"
+                       className="AvatarPic"
+                        />
+                        <Divider />
+                        <p className="TextCompanny">Project E-Commerce</p>
+                        <p className="SilverText">Sora & Co.</p>
+                        <p className="TextCardAva">A revolutionary shopping experience <br/>
+                        with client</p>
+                        <div className="AllTextLinkPro">
+                          <Link className="LinkView" style={{ color: "#00ffff" }} target="_" href="https://fashion-e-commerce-sfaz.vercel.app/"> View Project <ArrowRightOutlined /></Link>
+                        </div>
+                      </Card>
+                    </div>
+
+                  </div>
                 </div>
 
 
 
 
+                <div>
+                  <div className="TextContact">
+                    <p>Contact</p>
+                  </div>
 
-                <div className="TextContact">
-                  <p>Contact</p>
+                  <div>
+                    <p className="SmallTextcontact">Let's work together on next project</p>
+                  </div>
+
                 </div>
 
                 <div id="contact" className="ContactForm">
+                  <div>
+
+
+                    <p style={{ fontWeight: "700" }}>GET IN TOUCH</p>
+
+                    <div className="LongTextCon">
+                      <p>Have a project in mind? Feel free to reach out. I'm always open to<br />
+                        discussing new projects, creative ideas, or opportunities to be part of<br />
+                        your vision.</p>
+                    </div>
+
+
+                    <div className="AlldivContactText">
+                      <div className="DivLogosText">
+
+                        <div>
+
+                          <MailOutlined className="ThelogosE" />
+
+                        </div>
+
+
+                        <div>
+                          <p className="TextInL">Email</p>
+                          <p>abhirath1906@gmail.com</p>
+                        </div>
+
+
+
+                      </div>
+
+                      <div className="DivLogosText">
+
+                        <div>
+
+                          <PhoneOutlined className="ThelogosE" />
+
+                        </div>
+
+
+                        <div>
+                          <p className="TextInL">Phone</p>
+                          <p>+62 821 2293 5778</p>
+                        </div>
+
+
+
+                      </div>
+
+                      <div className="DivLogosText">
+
+                        <div>
+
+                          <AimOutlined className="ThelogosE" />
+
+                        </div>
+
+
+                        <div>
+                          <p className="TextInL">Location</p>
+                          <p>Indonesia, Jakarta</p>
+                        </div>
+
+
+
+                      </div>
+
+
+                    </div>
+
+                  </div>
+
+
                   <form onSubmit={handleSubmit} className="FormContainer">
                     <input
                       type="text"
@@ -252,23 +371,105 @@ export default function Home() {
 
 
           <Footer className="Footerr">
-            <div>
+            <div className="AllDivFooter">
+              <div className="AllDivFirstFoo">
+                <div className="Footer1TT">
+                  <p>ABHIRATH</p>
+                </div>
 
-              <p style={{ fontSize: "25px", fontWeight: "500" }}>Abhirath</p>
+                <div >
 
-              <div style={{
-                display: "flex", gap: "30px", alignItems: "center", justifyContent: "center",
-                fontSize: "30px", marginTop: "20px"
-              }}>
-                <a href="https://www.instagram.com" target="_"><InstagramOutlined /></a>
-                <a href="https://github.com" target="_"><GithubOutlined /></a>
-                <a href="https://www.facebook.com/?locale=id_ID" target="_"><FacebookOutlined /></a>
+                  <p className="TextFooter">Creating digital experiences that<br />
+                    inspire and engage. Let's build<br />
+                    something amazing together.</p>
+
+                </div>
+
+                <div className="MailFooter">
+                  <div>
+                    <MailOutlined className="ThelogosE" />
+                  </div>
+                  <div>
+                    <p style={{ color: "white", opacity: 0.5 }}>abhirath1906@gmail.com</p>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div className="AlldivLinksText">
+                <div className="TextLinks">
+                  <p>Quick Links</p>
+                </div>
+                <div className="AlldivLinksFooter">
+
+                  <p className="AllLinksFooter" onClick={() => document.getElementById("home").scrollIntoView({ behavior: "smooth" })}>Home</p>
+                  <p className="AllLinksFooter" onClick={() => document.getElementById("portfolio").scrollIntoView({ behavior: "smooth" })}>Portofolio</p>
+                  <p className="AllLinksFooter" onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}>Contact</p>
+
+                </div>
+              </div>
+
+
+
+              <div className="AlldivLinksText">
+                <div className="TextLinks">
+                  <p>Skills</p>
+                </div>
+
+                <div className="AlldivLinksFooter">
+                  <p className="AllLinksFooter">Front-End Daveloper</p>
+                  <p className="AllLinksFooter">UI/UX Design</p>
+                  <p className="AllLinksFooter">Editing Video</p>
+                </div>
+
+              </div>
+
+              <div className="allDivConnect">
+                <div className="TextLinks">
+                  <p>Connect</p>
+                </div>
+                <div className="LastTextFooter">
+                  <p>Follow me on social media for updates<br />
+                    and behind-the-scenes content.</p>
+                </div>
+
+                <div className="AllDivLinksFoo">
+                  <a href="https://www.instagram.com" target="_">
+                    <InstagramOutlined className="LinkSocial" />
+                  </a>
+
+                  <a href="https://github.com/settings/profile" target="_">
+                    <GithubOutlined className="LinkSocial" />
+                  </a>
+
+                  <a href="https://www.tiktok.com/id-ID/" target="_">
+                    <TikTokOutlined className="LinkSocial" />
+                  </a>
+
+
+
+                </div>
+
+                <div className="Avaible">
+                  <p>Available for projects</p>
+                </div>
               </div>
 
             </div>
+
+
+            <Footer className="Footerr2">
+              <div className="DivLastFooter">
+                <p>© 2025 Abhirath. All rights reserved.</p>
+
+                <p>Made With Next.js</p>
+              </div>
+
+            </Footer>
           </Footer>
-        </Layout>
-      </Layout>
+        </Layout >
+      </Layout >
     </>
   )
 }
