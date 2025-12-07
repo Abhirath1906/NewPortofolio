@@ -233,11 +233,9 @@
 .TextCardAva{
     color: white;
     opacity: 0.5;
+    margin-top: -10px;
 }
 
-.AllTextLinkPro{
-    margin-top: 30px;
-}
 
 .LinkView{
     color:#00ffff;
